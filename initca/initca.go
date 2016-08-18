@@ -216,8 +216,8 @@ var CAPolicy = func() *config.Signing {
 	return &config.Signing{
 		Default: &config.SigningProfile{
 			Usage:        []string{"cert sign", "crl sign"},
-			ExpiryString: "43800h",
-			Expiry:       5 * helpers.OneYear,
+			ExpiryString: "1314000h",
+			Expiry:       15 * helpers.OneYear,
 			CAConstraint: config.CAConstraint{IsCA: true},
 		},
 	}
